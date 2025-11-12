@@ -1,273 +1,148 @@
-<HTML>
-<head>
+<!doctype html>
 <html lang="en">
-<body style="background-image:url(https://i.imgur.com/9AaxrER.jpg);background-size:100% 100%;"><!doctype html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIR BREE CLASSLINK PORTAL</title>
 
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Portal</title>
-  <script src="/_sdk/element_sdk.js"></script>
- <style>
-  
-  .quick-links .link-button.special {
-    background-color: #F1CBFF; 
-    color: #483D8B;
-opacity: 0.8;
-  }
+  <!-- Tailwind for layout + effects -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  .quick-links .link-button:nth-child(2) {
-    background-color: #FFD1DC; 
-opacity: 0.8;
-  }
-
-  .quick-links .link-button:nth-child(3) {
-    background-color: #B5EAD7; 
-    color: #483D8B;
-opacity: 0.8;
-  }
-
-  .quick-links .link-button:nth-child(4) {
-    background-color: #FFDAC1; 
-    color: #483D8B;
-opacity: 0.8;
-  }
-
-  .quick-links .link-button:nth-child(5) {
-    background-color: #C7CEEA;
-    color: #483D8B;
-opacity: 0.8;
-  }
-
-  .quick-links .link-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(72, 61, 139, 0.4);
-    filter: brightness(1.1);
-  }
-</style>
- <style>
+  <style>
     body {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-
       font-family: 'Times New Roman', serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100%;
-.class-links .link-button:nth-child(1) {
-  background-color: #FFD1DC; 
-  color: #483D8B;
-}
-
-.class-links .link-button:nth-child(2) {
-  background-color: #B5EAD7; 
-  color: #483D8B;
-}
-
-.class-links .link-button:nth-child(3) {
-  background-color: #C7CEEA; 
-  color: #483D8B;
-}
-
-.class-links .link-button:nth-child(4) {
-  background-color: #FFDAC1;
-  color: #483D8B;
-}
-
-.class-links .link-button:nth-child(5) {
-  background-color: #E2F0CB;
-  color: #483D8B;
-}
-
-.class-links .link-button:nth-child(6) {
-  background-color: #F1CBFF;
-  color: #483D8B;
-}
-
-.class-links .link-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(72, 61, 139, 0.4);
-  filter: brightness(1.1);
-}
-}
-
-    * {
-      box-sizing: border-box;
+      background-image: url('https://i.imgur.com/9AaxrER.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
     }
 
     .container {
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
       padding: 2rem;
       max-width: 1400px;
-      margin: 0 auto;
-      min-height: 100%;
-    }
-
-    .left-section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .right-section {
-      width: 400px;
-      display: flex;
-      align-items: flex-start;
-      justify-content:flex-end;
-      padding-top: 2rem;
-.image-container {
-  margin-left: auto;
-}
-    }
-
-    .image-container {
-      width: 100%;
-      max-width: 350px;
-      background: white;
-      border-radius: 20px;
-      padding: 1rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-    }
-
-    .image-container img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      display: block;
+      margin: auto;
     }
 
     .header {
       background-color: #B0E0E6;
       color: #483D8B;
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 2.5rem;
+      font-weight: bold;
       text-align: center;
       padding: 1.5rem;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .quick-links {
+    .quick-links, .class-links {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      width: 100%;
     }
 
     .class-links {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
     }
 
     .link-button {
-      background-color: #B0E0E6;
-      color: #483D8B;
       border-radius: 20px;
-      padding: 1.5rem 1rem;
+      padding: 1.25rem;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      box-shadow: 5px 5px 10px #483D8B;
-      transition: all 0.3s ease;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100px;
+      color: #483D8B;
+      box-shadow: 5px 5px 10px #483D8B;
+      opacity: 0.9;
+      transition: all 0.3s ease;
+      background-color: #B0E0E6;
     }
 
     .link-button:hover {
       transform: translateY(-5px);
-      box-shadow: 7px 7px 15px #483D8B;
+      box-shadow: 0 8px 20px rgba(72, 61, 139, 0.5);
+      filter: brightness(1.1);
     }
 
-    .link-button.special {
-      background-color: #C154C1;
-      color: #B3B792;
-      font-size: 1.5rem;
+    /* Quick Links Pastel Colors */
+    .quick-links .link-button.special { background-color: #F1CBFF; }
+    .quick-links .link-button:nth-child(2) { background-color: #FFD1DC; }
+    .quick-links .link-button:nth-child(3) { background-color: #B5EAD7; }
+    .quick-links .link-button:nth-child(4) { background-color: #FFDAC1; }
+    .quick-links .link-button:nth-child(5) { background-color: #C7CEEA; }
 
+    /* Class Links Pastel Colors */
+    .class-links .link-button:nth-child(1) { background-color: #FFD1DC; }
+    .class-links .link-button:nth-child(2) { background-color: #B5EAD7; }
+    .class-links .link-button:nth-child(3) { background-color: #C7CEEA; }
+    .class-links .link-button:nth-child(4) { background-color: #FFDAC1; }
+    .class-links .link-button:nth-child(5) { background-color: #E2F0CB; }
+    .class-links .link-button:nth-child(6) { background-color: #F1CBFF; }
+
+    .image-container {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      max-width: 350px;
+      margin: auto;
+      text-align: center;
     }
 
-    @media (max-width: 100px) { 
-      .container {
-        flex-direction: column;
-      }
-
-      .right-section {
-        width: 100%;
-        max-width: 100px;
-        margin: 0 auto;
-      }
+    .image-container img {
+      width: 100%;
+      border-radius: 12px;
     }
 
-    @media (max-width: 640px) {
-      .class-links {
-        grid-template-columns: 1fr;
-      }
+    h2 { margin: 0.5rem 0 0; color: #483D8B; }
+    p { color: #483D8B; font-weight: 500; }
 
-      .header {
-        font-size: 1.5rem;
-      }
-
-      .link-button {
-        font-size: 1rem;
-      }
+    @media (max-width: 768px) {
+      .header { font-size: 1.8rem; }
+      .link-button { font-size: 1rem; padding: 1rem; }
     }
   </style>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
- </head>
- <body>
-  <div class="container"}
+</head>
 
-.class-links .link-button:nth-child(3) {
-  background-color: #C7CEEA; /* pastel lavender */
-  color: #483D8B;
+<body>
+  <div class="container">
+    <div class="left-section" style="flex: 1;">
+      <div class="header">SIR BREE CLASSLINK PORTAL</div>
 
->
-   <div class="left-section">
-    <div class="header" id="portal-title">
-     SIR BREE CLASSLINK PORTAL 
-    <style>
-  body {
-  
+      <div class="quick-links">
+        <a href="https://drive.google.com/drive/folders/1xNzTpPxeRnrhRMuw0MvrBx6S5Ej8NOsP" target="_blank" class="link-button special">MY DRIVE</a>
+        <a href="BED-PORTAL.HTML" target="_blank" class="link-button">BASIC EDUCATION PORTAL</a>
+        <a href="https://my.acn.edu.ph/login" target="_blank" class="link-button">ACN STUDENT PORTAL</a>
+        <a href="https://isimone.acn.edu.ph/login" target="_blank" class="link-button">ACN iSIMONE</a>
+        <a href="https://docs.google.com/spreadsheets/d/1odndtRta0FQmhy96zcAyTIISpkW24Yyy/edit?gid=832256720#gid=832256720" target="_blank" class="link-button">ADVISORY SCHOOL FORMS</a>
+      </div>
 
-</style>
-</div>
-    <div class="quick-links"><a href="https://drive.google.com/drive/folders/1xNzTpPxeRnrhRMuw0MvrBx6S5Ej8NOsP" target="_blank" rel="noopener noreferrer" class="link-button special"> 
-MY DRIVE </a> 
-<a href="BED-PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> 
-BASIC EDUCATION PORTAL </a> 
-<a href="https://my.acn.edu.ph/login" target="_blank" rel="noopener noreferrer" class="link-button"> 
-ACN STUDENT PORTAL </a> 
-<a href="https://isimone.acn.edu.ph/login" target="_blank" rel="noopener noreferrer" class="link-button"> 
-ACN iSIMONE </a> <a href="https://docs.google.com/spreadsheets/d/1odndtRta0FQmhy96zcAyTIISpkW24Yyy/edit?gid=832256720#gid=832256720" target="_blank" rel="noopener noreferrer" class="link-button"> 
-ADVISORY SCHOOL FORMS </a>
+      <div class="class-links">
+        <a href="GRADE 10 ST. MATTHEW CLASSLINKS PORTAL.HTML" target="_blank" class="link-button">Grade 10<br>ST. MATTHEW</a>
+        <a href="GRADE 10 ST. JOHN CLASSLINKS PORTAL.HTML" target="_blank" class="link-button">Grade 10<br>ST. JOHN</a>
+        <a href="GRADE 9 ST. LUKE CLASSLINKS PORTAL.HTML" target="_blank" class="link-button">Grade 9<br>ST. LUKE</a>
+        <a href="GRADE 8 OLHR CLASSLINKS PORTAL.HTML" target="_blank" class="link-button">Grade 8<br>OLHR</a>
+        <a href="GRADE 8 OLIC CLASSLINKS PORTAL.HTML" target="_blank" class="link-button">Grade 8<br>OLIC</a>
+        <a href="https://drive.google.com/drive/u/0/folders/1fXrrsgusd8ksE0wKGgzkYPVMRVn17L5d" target="_blank" class="link-button">PAASCU<br>Results</a>
+      </div>
     </div>
-    <div class="class-links">
-<a href="GRADE 10 ST. MATTHEW CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button" background-color: #FFD1DC;> Grade 10<br>ST. MATTHEW </a> 
-<a href="GRADE 10 ST. JOHN CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 10<br>
-      ST. JOHN </a> 
-<a href="GRADE 9 ST. LUKE CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 9<br>
-      ST. LUKE </a> 
-<a href="GRADE 8 OLHR CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 8<br>
-      OLHR </a> 
-<a href="GRADE 8 OLIC CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 8<br>
-      OLIC</a>
-<a href="https://drive.google.com/drive/u/0/folders/1fXrrsgusd8ksE0wKGgzkYPVMRVn17L5d" target="_blank" rel="noopener noreferrer" class="link-button"> PAASCU
- <br> Results</a>
+
+    <div class="right-section">
+      <div class="image-container">
+        <img src="https://i.imgur.com/Fg8npNq.jpg" alt="Class Portal Image">
+        <h2>BREZEL B. HUEZO, LPT.</h2>
+        <p>Grade 10 St. Matthew Class Adviser<br>S.Y. 2025 - 2026</p>
+      </div>
     </div>
-   </div>
-   
-<div class="right-section">
-    <div class="image-container"><img id="portal-image" src="https://i.imgur.com/Fg8npNq.jpg" alt="Class Portal Image" onerror="this.src=''; this.alt='Image failed to load'; this.parentElement.style.display='none';">
-<div class="name-container">
-  <h2>BREZEL B. HUEZO, LPT.</h2>
-  <p>Grade 10 St. Matthew Class Adviser <br> S.Y. 2025 - 2026</a>
-
-</div>
-
+  </div>
+</body>
+</html>
