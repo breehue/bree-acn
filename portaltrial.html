@@ -1,0 +1,379 @@
+<body style="background-image:url(https://i.imgur.com/9AaxrER.jpg);background-size:100% 100%;"><!doctype html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Portal</title>
+  <script src="/_sdk/element_sdk.js"></script>
+ <style>
+  /* --- iyong existing CSS --- */
+
+  /* Pastel Quick-Links Buttons */
+  .quick-links .link-button.special {
+    background-color: #F1CBFF; /* pastel purple */
+    color: #483D8B;
+opacity: 0.8;
+  }
+
+  .quick-links .link-button:nth-child(2) {
+    background-color: #FFD1DC; /* pastel pink */
+    color: #483D8B;
+opacity: 0.8;
+  }
+
+  .quick-links .link-button:nth-child(3) {
+    background-color: #B5EAD7; /* pastel mint */
+    color: #483D8B;
+opacity: 0.8;
+  }
+
+  .quick-links .link-button:nth-child(4) {
+    background-color: #FFDAC1; /* pastel peach */
+    color: #483D8B;
+opacity: 0.8;
+  }
+
+  .quick-links .link-button:nth-child(5) {
+    background-color: #C7CEEA; /* pastel lavender */
+    color: #483D8B;
+opacity: 0.8;
+  }
+
+  .quick-links .link-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(72, 61, 139, 0.4);
+    filter: brightness(1.1);
+  }
+</style>
+ <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      font-family: 'Times New Roman', serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100%;
+    /* 🎨 Pastel color palette for class buttons */
+.class-links .link-button:nth-child(1) {
+  background-color: #FFD1DC; /* pastel pink */
+  color: #483D8B;
+}
+
+.class-links .link-button:nth-child(2) {
+  background-color: #B5EAD7; /* pastel mint */
+  color: #483D8B;
+}
+
+.class-links .link-button:nth-child(3) {
+  background-color: #C7CEEA; /* pastel lavender */
+  color: #483D8B;
+}
+
+.class-links .link-button:nth-child(4) {
+  background-color: #FFDAC1; /* pastel peach */
+  color: #483D8B;
+}
+
+.class-links .link-button:nth-child(5) {
+  background-color: #E2F0CB; /* pastel green */
+  color: #483D8B;
+}
+
+.class-links .link-button:nth-child(6) {
+  background-color: #F1CBFF; /* pastel purple for PAASCU */
+  color: #483D8B;
+}
+
+/* hover effect */
+.class-links .link-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(72, 61, 139, 0.4);
+  filter: brightness(1.1);
+}
+}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      min-height: 100%;
+    }
+
+    .left-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .right-section {
+      width: 400px;
+      display: flex;
+      align-items: flex-start;
+      justify-content:flex-end;
+      padding-top: 2rem;
+.image-container {
+  margin-left: auto;
+}
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 350px;
+      background: white;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .header {
+      background-color: #B0E0E6;
+      color: #483D8B;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .quick-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .class-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .link-button {
+      background-color: #B0E0E6;
+      color: #483D8B;
+      border-radius: 20px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+      box-shadow: 5px 5px 10px #483D8B;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+    }
+
+    .link-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 7px 7px 15px #483D8B;
+    }
+
+    .link-button.special {
+      background-color: #C154C1;
+      color: #B3B792;
+      font-size: 1.5rem;
+
+    }
+
+    @media (max-width: 100px) { 
+      .container {
+        flex-direction: column;
+      }
+
+      .right-section {
+        width: 100%;
+        max-width: 100px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .class-links {
+        grid-template-columns: 1fr;
+      }
+
+      .header {
+        font-size: 1.5rem;
+      }
+
+      .link-button {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container"}
+
+.class-links .link-button:nth-child(3) {
+  background-color: #C7CEEA; /* pastel lavender */
+  color: #483D8B;
+}
+>
+   <div class="left-section">
+    <div class="header" id="portal-title">
+     SIR BREE CLASSLINK PORTAL 
+    <style>
+  body {
+    /* existing body styles */
+  }
+
+  .header {
+    background-color: #B0E0E6;
+    color: #483D8B;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+text-shadow:
+    0 0 5px #483D8B,
+    0 0 10px #483D8B,
+    0 0 15px #7B68EE, /* light purple glow */
+    0 0 20px #7B68EE,
+    0 0 30px #B0E0E6;
+  }
+
+  /* iba pang CSS */
+</style>
+</div>
+    <div class="quick-links"><a href="https://drive.google.com/drive/folders/1xNzTpPxeRnrhRMuw0MvrBx6S5Ej8NOsP" target="_blank" rel="noopener noreferrer" class="link-button special"> 
+MY DRIVE </a> 
+<a href="BED-PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> 
+BASIC EDUCATION PORTAL </a> 
+<a href="https://my.acn.edu.ph/login" target="_blank" rel="noopener noreferrer" class="link-button"> 
+ACN STUDENT PORTAL </a> 
+<a href="https://isimone.acn.edu.ph/login" target="_blank" rel="noopener noreferrer" class="link-button"> 
+ACN iSIMONE </a> <a href="https://docs.google.com/spreadsheets/d/1odndtRta0FQmhy96zcAyTIISpkW24Yyy/edit?gid=832256720#gid=832256720" target="_blank" rel="noopener noreferrer" class="link-button"> 
+ADVISORY SCHOOL FORMS </a>
+
+    </div>
+    <div class="class-links">
+<a href="GRADE 10 ST. MATTHEW CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button" background-color: #FFD1DC;> Grade 10<br>ST. MATTHEW </a> 
+<a href="GRADE 10 ST. JOHN CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 10<br>
+      ST. JOHN </a> 
+<a href="GRADE 9 ST. LUKE CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 9<br>
+      ST. LUKE </a> 
+<a href="GRADE 8 OLHR CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 8<br>
+      OLHR </a> 
+<a href="GRADE 8 OLIC CLASSLINKS PORTAL.HTML" target="_blank" rel="noopener noreferrer" class="link-button"> Grade 8<br>
+      OLIC</a>
+<a href="https://drive.google.com/drive/u/0/folders/1fXrrsgusd8ksE0wKGgzkYPVMRVn17L5d" target="_blank" rel="noopener noreferrer" class="link-button"> PAASCU
+ <br> Results</a>
+=
+
+    </div>
+   </div>
+   
+<div class="right-section">
+    <div class="image-container"><img id="portal-image" src="https://i.imgur.com/Fg8npNq.jpg" alt="Class Portal Image" onerror="this.src=''; this.alt='Image failed to load'; this.parentElement.style.display='none';">
+<div class="name-container">
+  <h2>BREZEL B. HUEZO, LPT.</h2>
+  <p>Grade 10 St. Matthew Class Adviser <br> S.Y. 2025 - 2026</a>
+
+</div>
+
+    </div>
+   </div>
+  </div>
+  <script>
+    
+      portal_title: "BREZEL HUEZO'S CLASS PORTAL",
+      image_url: https://i.imgur.com/Fg8npNq.jpg",
+      primary_color: "#C154C1",
+      accent_color: "#483D8B",
+      special_color: "#C154C1"
+    };
+
+    async function onConfigChange(config) {
+      const titleElement = document.getElementById('portal-title');
+      const imageElement = document.getElementById('portal-image');
+
+      titleElement.textContent = config.portal_title || defaultConfig.portal_title;
+      
+      if (config.image_url && config.image_url !== defaultConfig.image_url) {
+        imageElement.src = config.image_url;
+        imageElement.parentElement.style.display = 'block';
+      }
+
+      const linkButtons = document.querySelectorAll('.link-button:not(.special)');
+      linkButtons.forEach(button => {
+        button.style.backgroundColor = config.primary_color || defaultConfig.primary_color;
+        button.style.color = config.accent_color || defaultConfig.accent_color;
+        button.style.boxShadow = `5px 5px 10px ${config.accent_color || defaultConfig.accent_color}`;
+      });
+
+      const specialButton = document.querySelector('.link-button.special');
+      if (specialButton) {
+        specialButton.style.backgroundColor = config.special_color || defaultConfig.special_color;
+      }
+
+      const header = document.querySelector('.header');
+      header.style.backgroundColor = config.primary_color || defaultConfig.primary_color;
+      header.style.color = config.accent_color || defaultConfig.accent_color;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                config.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            },
+            {
+              get: () => config.special_color || defaultConfig.special_color,
+              set: (value) => {
+                config.special_color = value;
+                window.elementSdk.setConfig({ special_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["portal_title", config.portal_title || defaultConfig.portal_title],
+          ["image_url", config.image_url || defaultConfig.image_url]
+        ])
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99acc6cbe4146e8a',t:'MTc2MjUxNzk0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
